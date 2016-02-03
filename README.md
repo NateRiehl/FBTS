@@ -1,0 +1,1 @@
+![Codeship Build Status](https://codeship.com/projects/c83ed140-111e-0133-1a86-5ee70bfb1986/status?branch=master "Codeship")

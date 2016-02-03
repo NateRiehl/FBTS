@@ -1,0 +1,29 @@
+{
+  "name": "festival-by-the-sea",
+  "version": "0.0.0",
+  "authors": [
+    "Mark Henderson <henderson.mark@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "leaflet": "~0.7.3",
+    "leaflet-omnivore": "~0.3.2",
+    "leaflet.markercluster": "~0.4.0",
+    "jquery": "~2.1.4",
+    "lodash": "~3.9.3",
+    "tabletop": "~1.4.2",
+    "bluebird": "~2.9.30",
+    "Leaflet.label": "~0.2.1",
+    "leaflet-edgemarker-raywalker": "~1.1.2"
+  },
+  "resolutions": {
+    "lodash": "~3.9.3"
+  }
+}

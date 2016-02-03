@@ -1,0 +1,50 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"browser-package\" value=\"Device\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "android.support.v4": {
+            "PACKAGE_NAME": "com.npnd.fbts"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.npnd.fbts"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.npnd.fbts"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.npnd.fbts"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.npnd.fbts"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.npnd.fbts"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.npnd.legend"
+        },
+        "org.apache.cordova.statusbar": {
+            "PACKAGE_NAME": "com.npnd.legend"
+        },
+        "cordova-plugin-google-analytics": {
+            "PACKAGE_NAME": "com.npnd.legend"
+        }
+    },
+    "dependent_plugins": {}
+}

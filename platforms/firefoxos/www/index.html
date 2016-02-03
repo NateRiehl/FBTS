@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link rel="stylesheet" href="./bower_components/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="./bower_components/Leaflet.label/dist/leaflet.label.css" />
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps'>
+    <link rel='stylesheet' href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+	  <link rel='stylesheet' href="http://turbo87.github.io/sidebar-v2/css/leaflet-sidebar.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./bower_components/leaflet/dist/leaflet.js" type="text/javascript"></script>
+    <script src="./bower_components/leaflet-omnivore/leaflet-omnivore.min.js" type="text/javascript"></script>
+    <script src="./bower_components/leaflet.markercluster/dist/leaflet.markercluster.js" type="text/javascript"></script>
+    <script src="./js/tile.stamen.js?v1.3.0"></script>
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/lodash/lodash.min.js"></script>
+    <script src="./bower_components/tabletop/src/tabletop.js"></script>
+    <script src="./bower_components/bluebird/js/browser/bluebird.min.js"></script>
+    <script src="./bower_components/Leaflet.label/dist/leaflet.label.js" type="text/javascript"></script>
+	  <script src="./js/leaflet-easyButton.js"></script>
+	  <script src="http://turbo87.github.io/sidebar-v2/js/leaflet-sidebar.js"></script>
+    <script src="./js/OSMBuildings.js"></script>
+    <script src="./js/EdgeMarker.js"></script>
+
+    <title>Festival By the Sea</title>
+  </head>
+  <body>
+    <div id="sidebar" class="sidebar collapsed">
+        <ul class="sidebar-tabs" role="tablist">
+            <li><a href="#home" role="tab"><i class="fa fa-info"></i></a></li>
+            <li><a href="#profile" role="tab"><i class="fa fa-user"></i></a></li>
+            <li><a href="#schedule" role="tab"><i class="fa fa-clock-o"></i></a></li>
+            <li><a href="#sponsors" role="tab"><i class="fa fa-star"></i></a></li>
+            <li><a href="#social" role="tab"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#social" role="tab"><i class="fa fa-facebook"></i></a></li>
+        </ul>
+
+        <div class="sidebar-content active">
+            <div class="sidebar-pane" id="home">
+
+                <h1>Festival by the Sea
+                  <small>Manchester-by-the-Sea, MA</small>
+                </h1>
+
+                <h2>August 1st and 2nd, 2015</h2>
+                <p>
+                  On Saturday, August 2nd, celebrate the magic of summertime on
+                  Cape Ann by indulging in all of the locally grown products and
+                  talent that the area has to offer.
+                </p>
+                <p>
+                  With live music on 2 stages throughout the day, artists,
+                  crafters, and designers showcasing their handmade products
+                  and plants and produce from local farmers and co-ops, this is
+                  going to be an event you won't want to miss.
+                </p>
+                <p>
+                  Festival by-the-Sea will take place in downtown Manchester,
+                  MA. Check back often as this page will be updated continually
+                  with new Festival information.
+                </p>
+                <p>
+                    For more inquiries about performing at the festival, please
+                    contact Chris Langathianos at clangathianos@me.com
+                </p>
+                <p>
+                  For artist and vendor inquiries, please contact Mike Storella
+                  at m.storella@comcast.net
+                </p>
+
+                <!-- Begin MailChimp Signup Form -->
+                <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+                <style type="text/css">
+                	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+                	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                </style>
+                <div id="mc_embed_signup">
+                <form action="//markroberthenderson.us7.list-manage.com/subscribe/post?u=3e662b3b4a2e577ec25141d1f&amp;id=4ba77ea67d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                	<label for="mce-EMAIL">Subscribe to our mailing list</label>
+                	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_3e662b3b4a2e577ec25141d1f_4ba77ea67d" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                    </div>
+                </form>
+                </div>
+                <!--End mc_embed_signup-->
+            </div>
+            <div class="sidebar-pane" id="profile">
+              <h1>Vendor List</h1>
+
+              <div id="vendors_list">
+                <ul>
+                </ul>
+              </div>
+            </div>
+
+            <div class="sidebar-pane" id="schedule">
+              <h1>Schedule</h1>
+
+              <div id="schedule_list">
+                <ul>
+                </ul>
+              </div>
+            </div>
+
+            <div class="sidebar-pane" id="sponsors">
+              <h1>Sponsors</h1>
+            </div>
+            <div class="sidebar-pane" id="social">
+              <h1>Social</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="map" class="map"></div>
+
+    <script type="text/javascript">
+        // "1-wNVqavssiuvCi_XpB8pDStihf7Icm1vuOO1O1PrJrA"
+// var docKey2 = "https://docs.google.com/spreadsheets/d//pubhtml";
+
+      var getSheet = function(documentKey, sheetKey, composition) {
+          var promise = new Promise(function(resolve, reject) {
+                try {
+                    Tabletop.init({
+                        key: documentKey,
+                        callback: function(data, tabletop) {
+                            composition[sheetKey] = data;
+                            resolve(composition);
+                        },
+                        simpleSheet: true
+                    });
+                } catch(e) {
+                    reject(e);
+                }
+          });
+          return promise;
+      }
+
+      $(document).ready(function() {
+        document.addEventListener('deviceready', initialize, false);
+
+        function initialize() {
+          var getVendorSheet = _.partial(getSheet, "1-wNVqavssiuvCi_XpB8pDStihf7Icm1vuOO1O1PrJrA", "vendors");
+          var getEventSheet = _.partial(getSheet,"1ACehA0j8R1HcmgH_bWPGLh5gHJbcmogFBMuhYfcQelw", "schedule");
+
+          var renderVendorList = _.partial(renderList, "vendors");
+          var renderEventList = _.partial(renderList, "schedule");
+
+          getVendorSheet({})
+            .then(getEventSheet)
+            .then(getVendorSheet)
+            .then(renderVendorList)
+            .then(renderEventList)
+            .then(openSidebarIfNewUser)
+            .then(function(data) {
+              initMap(data);
+            }, function(err) {
+              console.log(err);
+            });
+        }
+      });
+
+
+      function openSidebarIfNewUser(obj) {
+        var promise = new Promise(function(resolve, reject) {
+          try {
+            if(localStorage.getItem("returning") === null) {
+              // $('a[href="#home"]').parent().addClass('active');
+              // $('.siderbar').removeClass('collapsed');
+            }
+            resolve(obj);
+          } catch(e) {
+            reject(e);
+          }
+        });
+
+        return promise;
+      }
+
+       function renderList(sheetKey, composition) {
+
+            var promise = new Promise(function(resolve, reject) {
+              composition[sheetKey].forEach(function(sheet) {
+                var HTML = '';
+                HTML += '<li><div class="'+ sheetKey +'">';
+                switch(sheetKey) {
+                  case "vendors":
+                      HTML += '<img src="http://placehold.it/350x150" />';
+                      HTML += '<strong>' + sheet.Booth + ": " + sheet.Company + '</strong>';
+                      HTML += '<strong>' + sheet["Type of Vendor"] + '</strong><br />';
+                      HTML += sheet.First + " " + sheet.Last + " - " + sheet['Email address'];
+                    break;
+                  case "schedule":
+                      HTML += '<img src="http://placehold.it/350x150" />';
+                      HTML += '<strong>' + sheet.Event + ": " + sheet.Description + '</strong>';
+                      HTML += '<strong>' + sheet["Time"] + '</strong>';
+                  default:
+                    break;
+                }
+                HTML += '</div></li>';
+                $("#" + sheetKey + "_list ul").append(HTML);
+              });
+
+              resolve(composition);
+        });
+        return promise;
+      }
+
+
+
+
+      function initMap(vendorData) {
+        var map = new L.Map("map", {
+            center: new L.LatLng(42.57328603452079, -70.77326595783234),
+            zoom: 17,
+            maxZoom: 19
+        });
+
+        var sidebar = L.control.sidebar('sidebar').addTo(map);
+
+        var stamen = new L.StamenTileLayer('watercolor');
+
+        var osmb = new OSMBuildings(map).load();
+        osmb.style({
+          wallColor:'rgba(43,37,30,.05)',
+          roofColor:'rgba(187,205,229,.05)',
+          shadows:true
+        });
+        osmb.date(new Date());
+
+
+
+        map.addLayer(stamen);
+
+        // Location Stuff
+
+        var dotLayer = L.layerGroup().addTo(map);
+        map.on('locationfound', function(e) {
+            function guid() {
+              function s4() {
+                return Math.floor((1 + Math.random()) * 0x10000)
+                  .toString(16)
+                  .substring(1);
+              }
+              return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+                s4() + '-' + s4() + s4() + s4();
+            }
+
+            if(localStorage.getItem('uuid') == null) {
+              localStorage.setItem('uuid', guid());
+            }
+
+            $.post( "http://endpoints-aphelionz.c9.io/crowd/fbts", {
+                a: e.accuracy,
+                t: e.timestamp,
+                lat: e.latitude,
+                lng: e.longitude,
+                id: localStorage.getItem('uuid')
+              })
+              .done(function( data ) {
+                var uuid = localStorage.getItem('uuid');
+
+                dotLayer.clearLayers();
+
+                // TODO: Layergroup? or some such thing
+                _.forOwn(data['fbts'], function(point) {
+                  dotLayer.addLayer(L.circle([point.lat, point.lng], 1, {
+                    stroke: false,
+                    fillColor: '#000',
+                    fillOpacity: 1
+                  }));
+                });
+              });
+        });
+
+        setInterval(function() {
+          map.locate({ setView: false });
+        }, 5000);
+
+        map.on('locationerror', function(e) {
+            console.log(e.message);
+        });
+
+        new L.Control.Zoom({ position: 'topright' }).addTo(map);
+
+        L.easyButton("fa-crosshairs", function() {
+               map.locate({setView: true, maxZoom: 22});},
+             "Where am I?",
+             map);
+
+        var areaLayer = omnivore.kml('./kml/Areas.kml')
+          .on('ready', function() {
+            var areas = this;
+            var areaIDs = Object.keys(areas._layers);
+
+
+            areaIDs.forEach(function(areaID) {
+              var area = areas._layers[areaID];
+              area.setStyle({color : "green"});
+              var areaData = area.feature;
+              area.bindLabel(areaData.properties.name, { noHide: true }).addTo(map);
+              //areaData.showLabel();
+              area.on('click', function(e) {
+                map.fitBounds(area.getBounds());
+              });
+            });
+            //map.fitBounds(this.getBounds());
+          });
+          areaLayer.addTo(map);
+
+          var storeLayer = omnivore.kml('./kml/Stores.kml')
+            .on('ready', function() {
+            var stores = this;
+              var storeIDs = Object.keys(stores._layers);
+                storeIDs.forEach(function(storeID) {
+
+                var store = stores._layers[storeID];
+                var popup = L.popup();
+
+                store.on('click', function(e) {
+                    var storeData = e.target.feature;
+                    var ourStore = _.filter(vendorData, {"Booth": storeData.properties.name})[0];
+                   popup
+                          .setLatLng(e.latlng)
+                          .setContent("Store: " + ourStore["Company"]
+                              +"<br>" + "Owner: " + ourStore["First"] + " " + ourStore["Last"] + "<br>"
+                              + "Type: " + ourStore["Type of Vendor"])
+                          .openOn(map);
+                });
+              });
+            });
+
+          var boothLayer = omnivore.kml('./kml/Booths.kml')
+            .on('ready', function() {
+              var booths = this;
+              var i = 0;
+              var boothIDs = Object.keys(booths._layers);
+                boothIDs.forEach(function(boothID) {
+
+                var booth = booths._layers[boothID];
+                var boothInfo = booth.feature;
+                var boothSearch = _.filter(vendorData, {"Booth": boothInfo.properties.name});
+
+                booth.setStyle({ color: "green" });
+                if (boothSearch.length){
+                  booth.setStyle({ color: "red" });
+                }
+
+                var popup = L.popup();
+
+                booth.on('click', function(e) {
+                    var boothData = e.target.feature;
+                    var ourBooth = _.filter(vendorData, {"Booth": boothData.properties.name})[0];
+                if (boothSearch.length){
+                   popup
+                          .setLatLng(e.latlng)
+                          .setContent("Business: " + ourBooth["Company"]
+                              +"<br>" + "Owner: " + ourBooth["First"] + " " + ourBooth["Last"] + "<br>"
+                              + "Type of Vendor: " + ourBooth["Type of Vendor"])
+                          .openOn(map);
+                }
+                  else{
+                      popup
+                          .setLatLng(e.latlng)
+                          .setContent("Booth " +boothData.properties.name + " has not been claimed! Are you an artist? Contact Mike Storella at m.storella@comcast.net for booking information")
+                          .openOn(map);
+                  }
+                });
+              });
+
+              var beacon = L.marker([42.57328603452079, -70.77326595783234]).addTo(map);
+              L.edgeMarker({
+                icon: L.icon({ // style markers
+                    iconUrl: 'img/edge-arrow-marker.png',
+                    clickable: true,
+                    iconSize: [48, 48],
+                    iconAnchor: [24, 24]
+                }),
+                rotateIcons: true, // rotate EdgeMarkers depending on their relative position
+                layerGroup: L.layerGroup([beacon]) // you can specify a certain L.layerGroup to create the edge markers from.
+              }).addTo(map);
+            });
+
+        map.on("zoomend", function(){ //Called when a user zooms
+          if(map.getZoom() >= 18){
+            map.addLayer(boothLayer); //Adds booths when below a certain zoom level
+            map.addLayer(storeLayer);
+            map.removeLayer(areaLayer);
+          }
+          else{
+            map.addLayer(areaLayer); //Adds areas when above a certain zoom level
+            map.removeLayer(boothLayer);
+            map.removeLayer(storeLayer);
+          }
+        });
+      }
+    </script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+  </body>
+</html>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Stores.kml</name>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff0000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffff0000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff0000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffff0000</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Stores</name>
+		<open>1</open>
+		<Placemark>
+			<name>Beach Street Cafe</name>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-70.77048713409245,42.57374271850794,0 -70.77046658962132,42.573785349307,0 -70.77046277232874,42.57376451686118,0 -70.77045338887285,42.57377476975979,0 -70.77043076737786,42.57380132227444,0 -70.77042771296327,42.57385733321573,0 -70.77057218953085,42.5738814717345,0 -70.77058921740097,42.57376509251301,0 -70.77048713409245,42.57374271850794,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Dunkin Donuts</name>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-70.76939972398624,42.57352800521185,0 -70.76932965613017,42.57343798111268,0 -70.76889526671118,42.57359098292165,0 -70.76895697240269,42.57368010546156,0 -70.76939972398624,42.57352800521185,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Zak&apos;s Handcrafts &amp; Gifts</name>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-70.76977217572986,42.57512387592107,0 -70.76977924785187,42.57514144441881,0 -70.76979662842491,42.57516718174998,0 -70.76986037627265,42.57514929673953,0 -70.76988052779348,42.57511102165172,0 -70.76994237170896,42.57509707302324,0 -70.76985838353585,42.57499505989103,0 -70.76978680780549,42.57502394689213,0 -70.76969216916577,42.57505654059717,0 -70.76970706497362,42.57510010790551,0 -70.76972550412944,42.57512738512634,0 -70.76977217572986,42.57512387592107,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Christine&apos;s Coffee Cup</name>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-70.77042028007698,42.57501696285336,0 -70.77042838551353,42.57499198622482,0 -70.77042781883414,42.574957473336,0 -70.77043078084164,42.57495746659025,0 -70.77018681340822,42.57494167657612,0 -70.77018490641136,42.574979275227,0 -70.77019925716841,42.57500798497167,0 -70.77025404567891,42.57500996782895,0 -70.77042028007698,42.57501696285336,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Cala&apos;s Restaurant</name>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-70.77019569482923,42.57483568819868,0 -70.77036003049825,42.57484528335107,0 -70.7703638239241,42.57463746371622,0 -70.77022998168471,42.57461279417088,0 -70.77019569482923,42.57483568819868,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Captain Dusty&apos;s Icecream</name>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-70.7690955403763,42.57307365692655,0 -70.76926759170357,42.57318965034168,0 -70.76937112847176,42.57310787903531,0 -70.76920749475947,42.57299801982471,0 -70.76932600128488,42.57308990144287,0 -70.76920668675739,42.57299126098091,0 -70.7690955403763,42.57307365692655,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>North Coast</name>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-70.76993191112533,42.57524504747246,0 -70.76998394644882,42.5753250639319,0 -70.77011676124212,42.57529569959005,0 -70.77007974527714,42.57521477662172,0 -70.76993191112533,42.57524504747246,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Central Street Gallery</name>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-70.77206126219217,42.57539682444879,0 -70.77213894646779,42.57552265768241,0 -70.77226759371818,42.57548462311034,0 -70.7721968492074,42.57535190319156,0 -70.77206126219217,42.57539682444879,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Landing at Seven Central</name>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-70.77191647439095,42.57543836583957,0 -70.77195792912725,42.57550054159746,0 -70.77207799410176,42.57545692910551,0 -70.77202937376366,42.575396922442,0 -70.77191647439095,42.57543836583957,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Surfari Stand Up Paddle &amp; Surf</name>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-70.77301849697993,42.5750664797333,0 -70.7730521142886,42.57520300980828,0 -70.77331270416346,42.57517484349323,0 -70.77328558912053,42.5750514933928,0 -70.77301849697993,42.5750664797333,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -1,0 +1,23 @@
+{
+  "name": "Leaflet.EdgeMarker-raywalker",
+  "version": "0.1.2",
+  "description": "Leaflet EdgeMarker is a [Leaflet](http://leafletjs.com/) plugin which allows you to indicate Markers, Circles and CircleMarkers that are outside of the current view by displaying CircleMarkers at the edges of the map.  Modified for use in Greenpace Mapping projects.",
+  "main": "leaflet.edgeMarker-raywalker.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raywalker-it/Leaflet.EdgeMarker-raywalker"
+  },
+  "authors": "Ray Walker <hello@raywalker.it>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raywalker-it/Leaflet.EdgeMarker-raywalker/issues"
+  },
+  "homepage": "https://github.com/raywalker-it/Leaflet.EdgeMarker-raywalker",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-contrib-jshint": "^0.9.2",
+    "jshint-stylish": "^0.1.5",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

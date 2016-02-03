@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Stores.kml</name>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Stores</name>
+		<open>1</open>
+		<Placemark>
+			<name>Central Street Gallery</name>
+			<LookAt>
+				<longitude>-70.77199346760165</longitude>
+				<latitude>42.57549408493006</latitude>
+				<altitude>0</altitude>
+				<heading>-0.001069324016371423</heading>
+				<tilt>37.7086882103874</tilt>
+				<range>187.4045758825291</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-70.7721624466615,42.57541365603225,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Landing at Seven Central</name>
+			<LookAt>
+				<longitude>-70.77199346760165</longitude>
+				<latitude>42.57549408493006</latitude>
+				<altitude>0</altitude>
+				<heading>-0.001069324016371423</heading>
+				<tilt>37.7086882103874</tilt>
+				<range>187.4045758825291</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-70.77199594401263,42.57544456569342,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Captain Dusty&apos;s</name>
+			<LookAt>
+				<longitude>-70.76940255061206</longitude>
+				<latitude>42.57292362235808</latitude>
+				<altitude>0</altitude>
+				<heading>0.0006835471272004778</heading>
+				<tilt>37.70774708646612</tilt>
+				<range>188.9005703821462</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-70.76920972496812,42.57303270242529,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Surfari Stand Up Paddle &amp; Surf</name>
+			<LookAt>
+				<longitude>-70.77265425820393</longitude>
+				<latitude>42.57515927544056</latitude>
+				<altitude>0</altitude>
+				<heading>-0.001954839150931342</heading>
+				<tilt>24.21320404721429</tilt>
+				<range>152.1958812551551</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-70.77316405773608,42.57516536052455,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cala&apos;s Restaurant</name>
+			<LookAt>
+				<longitude>-70.77022390992546</longitude>
+				<latitude>42.57438933888937</latitude>
+				<altitude>0</altitude>
+				<heading>-0.000681620955040331</heading>
+				<tilt>20.603239910634</tilt>
+				<range>127.7188900600353</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-70.77022389836942,42.5746948273243,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Beach Street Cafe</name>
+			<LookAt>
+				<longitude>-70.77047600106678</longitude>
+				<latitude>42.57387209937611</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0008521722128604854</heading>
+				<tilt>20.60381443544782</tilt>
+				<range>128.0796678638545</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-70.77045893962799,42.5738164676192,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Dunkin Donuts</name>
+			<LookAt>
+				<longitude>-70.76908024558034</longitude>
+				<latitude>42.57368421050466</latitude>
+				<altitude>0</altitude>
+				<heading>9.210897913908719e-005</heading>
+				<tilt>20.60381423767028</tilt>
+				<range>128.0171021129915</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-70.76931143789091,42.57356591939241,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Christine&apos;s Coffee Cup</name>
+			<LookAt>
+				<longitude>-70.77060019783693</longitude>
+				<latitude>42.57497802911109</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0009365611577086927</heading>
+				<tilt>20.60450434582423</tilt>
+				<range>164.9503305178316</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-70.7704503845891,42.57500688967757,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Zak&apos;s Handcrafts &amp; Gifts</name>
+			<LookAt>
+				<longitude>-70.76971399389686</longitude>
+				<latitude>42.57495574589883</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0003369933281522343</heading>
+				<tilt>20.60450690281371</tilt>
+				<range>165.7592640066164</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-70.76990143457059,42.57511249162747,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Tappan St. Vendor Parking</name>
+			<LookAt>
+				<longitude>-70.76814245136994</longitude>
+				<latitude>42.57370589857066</latitude>
+				<altitude>0</altitude>
+				<heading>0.09831791185156799</heading>
+				<tilt>37.37682254899894</tilt>
+				<range>583.5047230803051</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-70.76834114884518,42.5727161015693,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

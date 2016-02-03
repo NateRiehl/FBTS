@@ -1,0 +1,65 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<permission description=\"Required for accessing user location.\" name=\"geolocation\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"firefoxos-package\" value=\"Notification\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"firefoxos-package\" value=\"Device\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "www/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Vibration\"><param name=\"firefoxos-package\" value=\"Vibration\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.npnd.fbts"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.npnd.fbts"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.npnd.fbts"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.npnd.fbts"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.npnd.fbts"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.npnd.fbts"
+        },
+        "org.apache.cordova.statusbar": {
+            "PACKAGE_NAME": "com.npnd.fbts"
+        },
+        "cordova-plugin-google-analytics": {
+            "PACKAGE_NAME": "com.npnd.fbts"
+        }
+    },
+    "dependent_plugins": {}
+}

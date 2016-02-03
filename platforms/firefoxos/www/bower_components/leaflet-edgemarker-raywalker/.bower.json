@@ -1,0 +1,15 @@
+{
+  "name": "leaflet-edgemarker-raywalker",
+  "homepage": "https://github.com/raywalker-it/Leaflet.EdgeMarker-raywalker",
+  "version": "1.1.2",
+  "_release": "1.1.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.1.2",
+    "commit": "2c2c7b5e408c8d573f1de7b98036b7109cb9abda"
+  },
+  "_source": "git://github.com/raywalker-it/Leaflet.EdgeMarker-raywalker.git",
+  "_target": "~1.1.2",
+  "_originalSource": "leaflet-edgemarker-raywalker",
+  "_direct": true
+}
